@@ -1,28 +1,24 @@
-import sys
-
 n = int(input())
 
 arr = [[0 for _ in range(n)] for _ in range(n)]
 
-i,j = n-1, n-1
 cnt = 1
+direction = -1  # 처음에는 아래에서 위로 채움
+j = n - 1
 
-while(arr[n-1][0] != n**2 and arr[0][0] != n**2 and j>=0):
-    if(j%2 != 0): # 홀수
-        while(i>=0):
+while j >= 0:
+    if direction == -1:
+        for i in range(n - 1, -1, -1):  # 아래에서 위로
             arr[i][j] = cnt
-            cnt+=1
-            i-=1
-        i=0
-    else: # 짝수
-        while(i<=n-1): 
+            cnt += 1
+    else:
+        for i in range(n):  # 위에서 아래로
             arr[i][j] = cnt
-            cnt+=1
-            i+=1
-        i=n-1
-    j-=1
+            cnt += 1
 
-for i in range(n):
-    for j in range(n):
-        print(arr[i][j],end=" ")
-    print()
+    direction *= -1  # 방향 전환
+    j -= 1  # 열을 왼쪽으로 이동
+
+# 배열 출력
+for row in arr:
+    print(" ".join(map(str, row)))
