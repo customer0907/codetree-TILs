@@ -10,8 +10,7 @@ while(a !=0):
     arr[remainder] +=1
     a = a//b
 
-for i in range(1000):
-    if(arr[i]!=0):
-        total+=arr[i]**2
+for count in arr:
+    total += count**2
 
 print(total)
