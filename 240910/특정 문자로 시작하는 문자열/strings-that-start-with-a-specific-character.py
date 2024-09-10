@@ -15,6 +15,6 @@ for i in range(n):
         cnt+=1
         total+=len(arr[i])
 
-avg = total/3
+avg = round(total/3,2)
 
 print(f"{cnt} {avg:.2f}")
