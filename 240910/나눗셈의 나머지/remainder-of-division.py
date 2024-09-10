@@ -2,7 +2,7 @@ import sys
 
 a,b = map(int,sys.stdin.readline().split())
 
-arr = [0]*1000
+arr = [0]*b
 total = 0
 
 while(a !=0):
