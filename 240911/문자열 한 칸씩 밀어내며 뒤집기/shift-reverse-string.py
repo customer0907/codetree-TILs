@@ -13,10 +13,8 @@ for idx in arr:
         word = word[1:]+word[0]
         print(word)
     elif(idx=='2'):
-        word = word[-1]+word[0:-1]
+        word = word[-1]+word[:-1]
         print(word)
     else:
-        word = list(word)
-        word.reverse()
-        print(''.join(word))
-        word = str(word)
+        word = word[::-1]
+        print(word)
