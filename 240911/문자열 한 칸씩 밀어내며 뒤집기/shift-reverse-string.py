@@ -19,3 +19,4 @@ for idx in arr:
         word = list(word)
         word.reverse()
         print(''.join(word))
+        word = str(word)
