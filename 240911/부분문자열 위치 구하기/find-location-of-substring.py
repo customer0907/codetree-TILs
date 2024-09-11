@@ -6,7 +6,7 @@ for i in range(len(inp)):
     if(inp[i] == target[idx]):
         idx+=1
         if(idx == len(target)):
-            print(1)
+            print(i)
             break
     elif(i==len(inp)-1):
         print(-1)
