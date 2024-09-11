@@ -10,7 +10,7 @@ def fourCal(fst_num, opt, snd_num):
     elif(opt == '-'):
         print(f"{fst_num} - {snd_num} = {fst_num-snd_num}")
     elif(opt == '/'):
-        print(f"{fst_num} / {snd_num} = {fst_num/snd_num:.0f}")
+        print(f"{fst_num} / {snd_num} = {fst_num//snd_num}")
     elif(opt == '*'):
         print(f"{fst_num} * {snd_num} = {fst_num*snd_num}")
     else:
