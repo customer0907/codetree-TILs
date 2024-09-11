@@ -5,7 +5,9 @@ target = input()
 is_matched = False
 
 for i in range(len(inp)):
-    
+
+    if(i+len(target)-1 >= len(inp)):
+        continue
     is_matched = True
     for j in range(len(target)):
         if(inp[i+j] != target[j]):
