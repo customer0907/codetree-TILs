@@ -1,14 +1,18 @@
+import sys
+
 inp = input()
 target = input()
-idx = 0
+is_matched = False
 
 for i in range(len(inp)):
-    if(inp[i] == target[idx]):
-        idx+=1
-        if(idx == len(target)):
-            print(i-idx+1)
+    for j in range(len(target)):
+        if(inp[i+j] == target[j]):
+            is_matched = True
+        else:
+            is_matched = False
             break
-    else:
-        idx=0
-    if(i==len(inp)-1):
-        print(-1)
+    if(is_matched == True):
+        print(i)
+        sys.exit(0)
+
+print(-1)
