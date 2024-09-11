@@ -8,7 +8,7 @@ for i in range(len(inp)):
         if(idx == len(target)):
             print(i-idx+1)
             break
-    elif(i==len(inp)-1):
-        print(-1)
     else:
         idx=0
+    if(i==len(inp)-1):
+        print(-1)
