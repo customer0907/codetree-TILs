@@ -1,6 +1,6 @@
 import sys
 
-word = list(sys.stdin.readline())
+word = list(sys.stdin.readline().rstrip())
 
 def alphaOverTwo(_word):
     after_word = set(_word)
