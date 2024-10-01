@@ -7,7 +7,7 @@ def dateTimeGap(d,h,m):
 
     minute -= 11*60+11
     if(minute<0):
-        print(1)
+        return -1
 
     return minute
 
