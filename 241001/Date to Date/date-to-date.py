@@ -13,4 +13,4 @@ for i in range(1,m2):
 for i in range(1,m1):
     beforeSum += monthDays[i]
 
-print((afterSum+d2)-(beforeSum+d1))
+print((afterSum+d2)-(beforeSum+d1)+1)
