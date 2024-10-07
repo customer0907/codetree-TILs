@@ -1,6 +1,7 @@
 import sys
 
-N = int(input())
+N = sys.stdin.readline().split()
+N = int(N)
 
 arr = []
 is_overlap = [0] * 100
