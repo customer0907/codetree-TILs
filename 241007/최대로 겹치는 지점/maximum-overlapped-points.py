@@ -10,7 +10,7 @@ for i in range(N):
     arr.append((x1,x2))
 
 for x1,x2 in arr:
-    for j in range(x1,x2):
+    for j in range(x1,x2+1):
         is_overlap[j] +=1
         
 print(max(is_overlap))
