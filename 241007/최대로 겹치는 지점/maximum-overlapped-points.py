@@ -2,7 +2,6 @@ import sys
 
 N = int(input())
 
-arr = []
 is_overlap = [0] * 100
 
 for i in range(N):
