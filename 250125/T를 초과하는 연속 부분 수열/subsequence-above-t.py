@@ -9,6 +9,7 @@ for i in range(n):
         continue
         if t == 0:
             cnt+=1
+            _max=cnt
             continue
     if arr[i] > t and arr[i] == arr[i-1]+1:
         cnt+=1
