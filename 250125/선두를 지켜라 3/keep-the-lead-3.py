@@ -36,5 +36,8 @@ for i in range(len(a_move)):
             cnt+=1
         state.append(2)
 
-print(cnt)
+if cnt == 0:
+    print(1)
+else:
+    print(cnt)
 # Write your code here!
