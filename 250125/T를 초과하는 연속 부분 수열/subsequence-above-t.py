@@ -7,7 +7,7 @@ _max = 0
 for i in range(n):
     if arr[i] > t:
         cnt+=1
-        _max = cnt
+        _max = max(_max,cnt)
     else:
         cnt = 0
 
