@@ -16,7 +16,7 @@ for i in range(M):
 dist_A = 0
 dist_B = 0
 state = []
-state.append(0)
+state.append(-1)
 cnt = 0
 
 for i in range(len(a_move)):
@@ -36,5 +36,5 @@ for i in range(len(a_move)):
             cnt+=1
         state.append(2)
 
-print(cnt)
+print(cnt+1)
 # Write your code here!
