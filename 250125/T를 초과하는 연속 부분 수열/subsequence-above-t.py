@@ -7,8 +7,8 @@ _max = 0
 for i in range(n):
     if arr[i] > t:
         cnt+=1
-    else:
         _max = cnt
+    else:
         cnt = 0
 
 print(_max)
