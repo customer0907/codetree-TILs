@@ -10,7 +10,7 @@ for i in range(n):
         if t == 0:
             cnt+=1
             continue
-    if arr[i] == arr[i-1]+1:
+    if arr[i] > t and arr[i] == arr[i-1]+1:
         cnt+=1
     else:
         _max = cnt+1
